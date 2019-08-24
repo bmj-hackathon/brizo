@@ -12,6 +12,8 @@ app = Flask(__name__)
 CORS(app)
 
 if 'CONFIG_FILE' in os.environ and os.environ['CONFIG_FILE']:
+    logging.info("os.environ['CONFIG_FILE']: ".format(os.environ['CONFIG_FILE']))
     app.config['CONFIG_FILE'] = os.environ['CONFIG_FILE']
 else:
+    logging.debug("'CONFIG_FILE' not found, using default: {} ".format('config.ini'))
     app.config['CONFIG_FILE'] = 'config.ini'

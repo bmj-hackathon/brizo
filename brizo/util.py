@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 
 def setup_ocean_instance(config_file):
+    logger.info("Getting config file: {}".format(config_file))
     config = Config(filename=config_file)
     ConfigProvider.set_config(config)
     ocn = Ocean()
