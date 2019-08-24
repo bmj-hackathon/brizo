@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
 
 [packages]
 squid-py = "==0.6.16"
@@ -22,7 +23,7 @@ osmosis-on-premise-driver = "==0.0.6"
 Werkzeug = "==0.14.1"
 
 [requires]
-python_version = "3.5"
+python_version = "3.6"
 
 [pipenv]
 allow_prereleases = true
