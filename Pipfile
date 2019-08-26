@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+ocean-brizo = {editable = true,file = "file:///home/batman/ocn/brizo-fork"}
+squid-py = "*"
+0-6-16 = "*"
+flask = "*"
+pytest = "*"
+flask-swagger = "*"
+flask-swagger-ui = "*"
+flask-cors = "*"
+jinja2 = "*"
+requests = "*"
+gunicorn = "*"
+osmosis-aws-driver = "*"
+osmosis-driver-interface = "*"
+werkzeug = "*"
+
+[requires]
+python_version = "3.6"

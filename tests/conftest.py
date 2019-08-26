@@ -9,11 +9,14 @@ from squid_py.config import Config
 from squid_py.keeper import Keeper
 from squid_py.keeper.web3_provider import Web3Provider
 from squid_py.ocean.ocean import Ocean
+import logging
+
+logging.info("Imported".format())
 
 from brizo.run import app
 
 app = app
-
+logging.info("App: {}".format(app))
 
 @pytest.fixture
 def client():
